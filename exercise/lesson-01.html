@@ -18,10 +18,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/default.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/base16/google-light.min.css"
-          integrity="sha512-nzMhN+KUSkxA5L9h2BKKpaFw19+a1JufkYL6GEwKPxrsf5YFO8TBbI1Qppd72zZbHAA6RG2htrd2q7sHvcb4Ew=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/base16/google-light.min.css" integrity="sha512-nzMhN+KUSkxA5L9h2BKKpaFw19+a1JufkYL6GEwKPxrsf5YFO8TBbI1Qppd72zZbHAA6RG2htrd2q7sHvcb4Ew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -31,8 +28,34 @@
 
     <script>
         hljs.highlightAll();
-        hljs.initLineNumbersOnLoad();
+        hljs.initLineNumbersOnLoad({
+            singleLine: true
+        });
     </script>
+    <style>
+
+        td.hljs-ln-numbers {
+            text-align: center;
+            color: #ccc;
+            vertical-align: top;
+            padding-right: 10px;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        td.hljs-ln-code {
+            padding-left: 10px;
+        }
+
+        code {
+            white-space: pre-wrap;
+            overflow: auto;
+        }
+    </style>
 </head>
 <body>
 <!-- Google tag (gtag.js) -->
@@ -59,8 +82,8 @@
             </a>
         </header>
         <main>
-            <h1 class="text-center">
-                Exercises. Lesson 1
+            <h1>
+                Exercises. Lesson 1 - HTML Basics. Part 1
             </h1>
             <p>
                 <a href="../index.html">← Back to All exercises</a>
@@ -68,6 +91,26 @@
             <div>
                 <section class="exercise">
                     <h2>Exercise 1-1</h2>
+                    <div class="description font-monospace">
+                        Reproduce the code you've seen so far in this lesson.
+                        <br>
+                        That is Repeat on your own what we've coded so far.
+                    </div>
+                </section>
+                <section class="exercise">
+                    <div class="description font-monospace">
+                        For every exercise from now on create a new file.
+                        <br>
+                        Name it using the number of the exercise and '.html' extension.
+                        <br>
+                        For example here is the file name list you might end up with after finishing all the exercises here.
+                        <br>
+                        <img src="file-name-example.png" style="width: 250px">
+                    </div>
+                </section>
+
+                <section class="exercise">
+                    <h2>Exercise 1-2</h2>
                     <div class="description font-monospace">
                         Create a text field for search
                     </div>
@@ -83,12 +126,12 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapse-1-1" aria-expanded="false"
-                                        aria-controls="flush-collapse-1-1">
+                                        data-bs-target="#flush-collapse-1-2" aria-expanded="false"
+                                        aria-controls="flush-collapse-1-2">
                                     Solution ✅
                                 </button>
                             </h2>
-                            <div id="flush-collapse-1-1" class="accordion-collapse collapse">
+                            <div id="flush-collapse-1-2" class="accordion-collapse collapse">
                                 <div class="accordion-body">
                                     <h4>HTML Code</h4>
                                     <div class="html-code code">
@@ -100,7 +143,7 @@
                     </div>
                 </section>
                 <section class="exercise">
-                    <h2>Exercise 1-2</h2>
+                    <h2>Exercise 1-3</h2>
                     <div class="description font-monospace">
                         Create 2 text fields: Full Name and Phone
                     </div>
@@ -116,16 +159,164 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapse-1-2" aria-expanded="false"
-                                        aria-controls="flush-collapse-1-2">
+                                        data-bs-target="#flush-collapse-1-3" aria-expanded="false"
+                                        aria-controls="flush-collapse-1-3">
                                     Solution ✅
                                 </button>
                             </h2>
-                            <div id="flush-collapse-1-2" class="accordion-collapse collapse">
+                            <div id="flush-collapse-1-3" class="accordion-collapse collapse">
                                 <div class="accordion-body">
                                     <h4>HTML Code</h4>
                                     <div class="html-code code">
                                         <pre><code class="language-html dimal-code-wrapper" data-lang="html">Full Name &lt;input&gt; Phone &lt;input&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="exercise">
+                    <h2>Exercise 1-4</h2>
+                    <div class="description font-monospace">
+                        Move the text and text fields from the previous exercise <br>appear on their own lines
+                    </div>
+                    <div class="outcome-cool">
+                        <div class="outcome-text">
+                            Outcome👇
+                        </div>
+                        <div class="outcome">
+                            <p>Full Name</p>
+                            <p><input></p>
+                            <p>Phone Number</p>
+                            <p><input></p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse-1-4" aria-expanded="false"
+                                        aria-controls="flush-collapse-1-4">
+                                    Solution ✅
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-1-4" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <h4>HTML Code</h4>
+                                    <div class="html-code code">
+                                        <pre><code class="language-html dimal-code-wrapper" data-lang="html">&lt;p&gt;Full Name&lt;/p&gt;
+&lt;p&gt;&lt;input&gt;&lt;/p&gt;
+&lt;p&gt;Phone Number&lt;/p&gt;
+&lt;p&gt;&lt;input&gt;&lt;/p&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="exercise">
+                    <h2>Exercise 1-5</h2>
+                    <div class="description font-monospace">
+                        Make each pair of text and text field to be on separate lines.
+                    </div>
+                    <div class="outcome-cool">
+                        <div class="outcome-text">
+                            Outcome👇
+                        </div>
+                        <div class="outcome">
+                            <p>Full Name <input></p>
+                            <p>Phone <input></p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse-1-5" aria-expanded="false"
+                                        aria-controls="flush-collapse-1-5">
+                                    Solution ✅
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-1-5" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <h4>HTML Code</h4>
+                                    <div class="html-code code">
+                                        <pre><code class="language-html dimal-code-wrapper" data-lang="html">&lt;p&gt;Full Name &lt;input&gt;&lt;/p&gt;
+&lt;p&gt;Phone &lt;input&gt;&lt;/p&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="exercise">
+                    <h2>Exercise 1-5</h2>
+                    <div class="description font-monospace">
+                        Add add a paragraph with text and a paragraph with text and input to the previous exercise.
+                    </div>
+                    <div class="outcome-cool">
+                        <div class="outcome-text">
+                            Outcome👇
+                        </div>
+                        <div class="outcome">
+                            <p>Add a new address</p>
+                            <p>Full Name <input></p>
+                            <p>Phone <input></p>
+                            <p>Address <input></p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse-1-6" aria-expanded="false"
+                                        aria-controls="flush-collapse-1-6">
+                                    Solution ✅
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-1-6" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <h4>HTML Code</h4>
+                                    <div class="html-code code">
+                                        <pre><code class="language-html dimal-code-wrapper" data-lang="html">&lt;p&gt;Add a new address&lt;/p&gt;
+&lt;p&gt;Full Name &lt;input&gt;&lt;/p&gt;
+&lt;p&gt;Phone &lt;input&gt;&lt;/p&gt;
+&lt;p&gt;Address &lt;input&gt;&lt;/p&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="exercise">
+                    <h2>Exercise 1-7</h2>
+                    <div class="description font-monospace">
+                        Create two paragraphs with text and write the name of your favourite PC game in the second paragraph.
+                    </div>
+                    <div class="outcome-cool">
+                        <div class="outcome-text">
+                            Outcome👇
+                        </div>
+                        <div class="outcome">
+                            <p>My favourite PC game is:</p>
+                            <p>Write it here</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse-1-7" aria-expanded="false"
+                                        aria-controls="flush-collapse-1-7">
+                                    Solution ✅
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-1-7" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <h4>HTML Code</h4>
+                                    <div class="html-code code">
+                                        <pre><code class="language-html dimal-code-wrapper" data-lang="html">&lt;p&gt;My favourite PC game is:&lt;/p&gt;
+&lt;p&gt;Write it here&lt;/p&gt;</code></pre>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +395,7 @@
     }
 
     .hljs.dimal-code-wrapper {
-        background-color: rgb(248, 249, 250);
+        /*background-color: rgb(248, 249, 250);*/
     }
 </style>
 
