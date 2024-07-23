@@ -51,6 +51,10 @@
     justify-content: space-between;
 }
 
+header {
+    margin-bottom: 30px;
+}
+
 .dimal-code-wrapper {
     border-radius: 5px;
     border: 1px solid rgba(33, 37, 41, 0.175);
@@ -79,6 +83,31 @@
     display: flex;
     gap: 25px;
     align-items: center;
+}
+
+@media (max-width: 850px) {
+    .iconize {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .medium-icon {
+        align-self: center;
+    }
+
+    .outcome-cool {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .blog-main-container {
+        padding: 0 5px;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
 }
 
 .accordion {
