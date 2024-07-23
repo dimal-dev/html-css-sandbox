@@ -15,9 +15,10 @@
 }
 
 .reddit-logo {
+    width: 115px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    /*align-items: flex-end;*/
+    /*gap: 8px;*/
 }
 
 .reddit-logo-word {
