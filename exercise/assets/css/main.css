@@ -130,3 +130,7 @@ header {
 .no-wrap {
     white-space: nowrap;
 }
+
+img {
+    max-width: 100%;
+}
