@@ -1,0 +1,56 @@
+<p>
+    Tip 💡: Use an empty href="" attribute to make testing the results easier for you.
+</p>
+<p>
+    Hint 😉: Don't transition the font-size of the Duolingo link (the green one). When clicked the size changes instantly.
+</p>
+<p>
+    <a href="" class="duolingo-link">Get Started</a>
+</p>
+<p>
+    <a href="" class="paypal-link">Transfer Money</a>
+</p>
+<p>
+    <a href="" class="soundcloud-link">Create Account</a>
+</p>
+
+<style>
+    a {
+        text-decoration: none;
+        padding: 5px;
+        transition: background-color 0.5s;
+    }
+
+    .duolingo-link {
+        color: white;
+        background-color: rgb(87, 204, 4);
+        text-transform: uppercase;
+    }
+
+    .duolingo-link:hover {
+        background-color: rgb(97, 222, 5);
+    }
+
+    .duolingo-link:active {
+        font-size: 15px;
+    }
+
+    .paypal-link {
+        color: white;
+        background-color: #0645b5;
+    }
+
+    .paypal-link:hover {
+        background-color: #0070e0;
+    }
+
+    .paypal-link:active {
+        text-decoration: underline;
+        background-color: #033087;
+    }
+
+    .soundcloud-link {
+        color: white;
+        background-color: #ff5502;
+    }
+</style>

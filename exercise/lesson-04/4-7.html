@@ -1,0 +1,67 @@
+<p>
+    Tip 💡: Use an empty href="" attribute to make testing the results easier for you.
+</p>
+<p>
+    Extra goodies for the curious 🧑‍🎓:<br>
+    Add the 'border-radius: 4px;' property to your a {...} CSS Rule.<br>
+    It will round the corners of your buttons a bit..
+</p>
+<p>
+    <a href="" class="google-link">For work</a>
+</p>
+<p>
+    <a href="" class="twitch-link">Chat</a>
+</p>
+<p>
+    <a href="" class="github-link">Create</a>
+</p>
+
+<style>
+    a {
+        text-decoration: none;
+        padding: 5px;
+        transition: background-color 0.5s,
+                    color 0.5s;
+        border-radius: 4px;
+    }
+
+    .google-link {
+        color: #1a73e8;
+    }
+
+    .google-link:hover {
+        color: #174ea6;
+        background-color: #f4f8fe;
+    }
+
+    .google-link:active {
+        color: #174ea6;
+        background-color: #e8f0fe;
+    }
+
+    .twitch-link {
+        color: white;
+        background-color: #9147ff;
+    }
+
+    .twitch-link:hover {
+        background-color: #772ce8;
+    }
+
+    .twitch-link:active {
+        background-color: #5c16c5;
+    }
+
+    .github-link {
+        color: white;
+        background-color: #1f883d;
+    }
+
+    .github-link:hover {
+        background-color: #1d8139;
+    }
+
+    .github-link:active {
+        background-color: #197934;
+    }
+</style>
